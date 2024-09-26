@@ -1,0 +1,492 @@
+
+body{
+   margin: 0;
+   top: 0;
+   color: #fff;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+   background:url('https://static.vecteezy.com/system/resources/previews/022/394/404/non_2x/silhouette-of-a-lamp-standing-in-a-spotlight-ai-generated-free-photo.jpg');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+#navbar{
+    width: 100%;
+    position: fixed;
+    background: linear-gradient(to right, rgb(27, 64, 61),rgb(4 49 78));
+    height: 72px;
+    z-index: 10000;
+    box-shadow: 0 0 24px 6px #193844;
+}
+.name{
+    position: absolute;
+    display: flex;
+    left: 20px;
+    font-size: 35px;
+    font-weight: 500;
+    margin:0px;
+}
+.h1{
+    
+    font-size: 64px;
+    color: rgb(202, 82, 38);
+}
+.h2{
+    padding-top: 5px;
+}
+.h3{
+    padding-top: 5px;
+    color:teal;
+}
+.h4{
+    padding-top: 2px;
+    color: #ff8401;
+    font-size: 40px;
+    
+}
+.menu{
+    display: flex;
+    position: fixed;
+    text-decoration: none;
+    list-style: none;
+    top: 5px;
+    right: 50px;
+    margin: 17px;
+    color: #fff;
+    justify-content: space-between;
+}
+.menubar li{
+    display: inline-block;
+   width: 130px;
+    padding: 4px 34px 0px 0px;
+}
+li{
+    text-align: center;
+}
+.menubar li a {
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    padding: 0px 0 0 0;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+.menubar li a:hover,
+.menubar li a.active{
+    display: inline-flex;
+    font-size: 24px;
+    color: rgb(205, 131, 21);
+    /* box-shadow: 3px 5px 8px #176e6f; */
+
+}
+.img-logo{
+    position: absolute;
+    top: 30%;
+    height: 300px;
+    width: 300px;
+    right: 200px;
+    border-radius: 50%;
+    background-color: white;
+    overflow: hidden;
+    border: 4px solid #FFF;
+    box-shadow: 5px 5px 10px 0px rgba(240, 234, 234, 0.3);
+filter: drop-shadow(5px 5px 70px rgba(229, 223, 223, 0.3));
+}
+.image img{
+    top: 25%;
+    height: 320px;
+    width: 320px;
+
+}
+
+
+.banner{
+    padding: 0;
+    width: 80%;
+    height: 70%;
+    position: absolute;
+    top: 25%;
+    left: 150px;
+   
+    
+}
+h3,h6,h2,p{
+    margin: 0px;
+}
+.app-text{
+    width: 50%;
+    float: left;
+    margin: 30px 0 30px 40px;
+}
+.app-text h6{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.app-text h2{
+    font-size: 60px;
+    font-weight: 700;
+    margin: 0 0 15px;
+    line-height: 1;
+    color: #fff;
+}
+.app-text h3{
+    font-size: 40px;
+    font-weight: 500;
+    margin: 0 0 15px;
+    line-height: 1;
+    color: #ff903f;
+}
+.app-text p{
+    width: 500px;
+    font-size: 17px;
+    color: #919191;
+    line-height: 25px;
+}
+.cv-btn{
+    margin-top: 40px;
+}
+.cv-btn a{
+   
+    letter-spacing: 1px;
+    font-size: 15px;
+    background: rgb(205, 131, 21);
+    border: 2px solid  rgb(205, 131, 21);
+    border-radius: 50px;
+    padding: 13px 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+}
+.cv-btn a:hover{
+    border: 2px solid #fff;
+    color: #fff;
+    background: transparent;
+}
+.quick-links{
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    background: #222226;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+   
+   
+}
+.quick-links ul{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    margin: 10px auto;
+    height: 25px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.5s;
+    
+}
+.quick-links ul li{
+    margin: 0 30px;
+    cursor: pointer;
+}
+.quick-links ul li i{
+    padding-top: 5px;
+    font-size: 20px;
+    color: #ff9301;
+}
+.quick-links ul li p{
+    margin-top: 10px;
+    font-size: 16px;
+}
+.quick-links ul:hover{
+    height: 55px;
+}
+.social-box{
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    width: 20px;
+}
+.follow-me{
+    position: absolute;
+    right: 0;
+    bottom: 100%;
+    color: #bbb;
+    font-size: 19px;
+    line-height: 24px;
+    height: 24px;
+    white-space: nowrap;
+    transform-origin: 100% 0;
+    text-align: right;
+    padding-right: 75px;
+    transform: rotate(90deg);
+}
+.follow-me::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 50px;
+    height: 1px;
+    background: #ff9301;
+}
+
+
+.social-icon a{
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #bbb;
+    transition: all 0.5s;
+}
+.social-icon a:hover{
+    color: #ff9031;
+}
+#about-me{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-top: 5px;
+    background: url('https://wallpaperaccess.com/full/1962097.jpg') no-repeat center center/cover;
+    z-index: 2;
+}
+
+.logo img{
+    position: absolute;
+    height: 500px;
+    width: 330px;
+    left: 6%;
+    margin-top: 4%;
+    margin-bottom: 10%;
+    overflow: hidden;
+    box-shadow: 9px 9px 17px -6px skyblue;
+    transform: change ;
+   
+    
+}
+
+.introduction{
+    position: absolute;
+    left: 40%;
+    width: 50%;
+    
+    margin-top: 50px;
+}
+.introduction h2{
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1px;
+    color: #193e44;
+}
+.introduction .skills{
+    position: absolute;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.naam, .we{
+    color: gray;
+    font-weight: 600;
+}
+.edu h3{
+    color: #193e44;
+}
+.school h3, .degree h3{
+    font-size: 15px;
+    color: gray;
+    font-weight: 600;
+}
+.Deg{
+    color: #ff9301;
+    font-weight: 600;
+}
+.conclusion{
+    font-size: 16px;
+}
+/* Work *****************************            */
+
+/* #work{
+    position:absolute;
+    width: 100%;
+    height: 100vh;
+    display: inline-flex;
+    background: url('background.jpg') no-repeat center center/cover;
+    margin-top: 5px;
+    z-index: 2000;
+} */
+.heading{
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
+    left: 40%;
+}
+.heading h2{
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    align-items: center;
+}
+
+
+.maincontainer{
+    width: 300px;
+    height: 300px;
+    margin: 125px 70px 0px 65px;
+    float: left;
+    
+}
+.image2 img{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 12px 13px 8px -6px skyblue;
+    overflow: hidden;
+}
+.front h2
+{
+    display: grid;
+    position: absolute;
+    top: 250px;
+    background: #022e3da5;
+    height: 50px;
+    width: 300px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    overflow: hidden;
+    color: #fcf6f6;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.back h2
+{
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px auto;
+    left: 70px;
+}
+
+.back p
+{
+    position: absolute;
+    top: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 2px;
+}
+.maincontainer > .front
+{
+    position: absolute;
+    transform: perspective(600px) rotateY(0deg);
+    
+    width: 302px;
+    height: 300px;
+    
+    backface-visibility: hidden; 
+    transition: transform .6s linear 0s;
+}
+.maincontainer > .back
+{
+    position: absolute;
+    transform: perspective(600px) rotateY(180deg);
+    background: #26262656;
+    color: #fff;
+    width: 302px;
+    height: 300px;
+    border-radius: 10px;
+    padding-top: 8px;
+    backface-visibility: hidden; 
+    transition: transform .6s linear 0s;
+}
+.maincontainer:hover > .front
+{
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.maincontainer:hover > .back
+{
+    transform: perspective(600px) rotateY(0deg);
+}
+
+#work{
+    position: absolute;
+    margin-top: 5px;
+    background: url('https://www.pixel4k.com/wp-content/uploads/2018/11/dark-black-simple-background-4k_1541970824.jpg') no-repeat center center/cover;
+}
+.locontainer{
+    max-width: 1000px;
+    min-height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    overflow: hidden;
+    margin: 0px 80px 80px 60px;
+}
+.box{
+    max-width: 600px;
+    min-height: 250px;
+    position: relative;
+    cursor: pointer;
+    left: 8%;
+}
+.box .thumb{
+    max-width: 250px;
+    width: 100%;
+    height: 247px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    shape-outside: circle();
+    margin-right: 20px;
+    border: 2px solid whitesmoke;
+}
+.thumb img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.box .text{
+   padding: 20px 20px 20px 20px;
+    background-color: #22222669;
+    height: 210px;
+    width: 600px;
+    border-radius: 200px 200px 200px 200px;
+    transition: all 0.5s ease-out;
+}
+.box .text h2{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+.box .text p{
+    margin: 15px 0;
+}
+.box .text:hover{
+    background-color: rgb(14, 71, 90);
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 12px 13px 8px -5px rgba(29, 85, 117, 0.585);
+     
+}
