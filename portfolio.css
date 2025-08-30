@@ -4,11 +4,17 @@ body{
    top: 0;
    color: #fff;
 }
-
+.bodyContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
 .container{
     width: 100%;
     height: 100vh;
-   background:url('https://static.vecteezy.com/system/resources/previews/022/394/404/non_2x/silhouette-of-a-lamp-standing-in-a-spotlight-ai-generated-free-photo.jpg');
+   background:url('/Portfolio/images/portfoilio\ backgruond.jpg');
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
@@ -117,6 +123,11 @@ filter: drop-shadow(5px 5px 70px rgba(229, 223, 223, 0.3));
 h3,h6,h2,p{
     margin: 0px;
 }
+.dynamic-title{
+    display: inline-block;
+    position: relative;
+    height: 60px;
+}
 .app-text{
     width: 50%;
     float: left;
@@ -178,19 +189,16 @@ h3,h6,h2,p{
     background: #222226;
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
-   
-   
 }
 .quick-links ul{
     display: flex;
     list-style: none;
     text-decoration: none;
     margin: 10px auto;
-    height: 25px;
+    height: 50px;
     text-align: center;
     overflow: hidden;
     transition: all 0.5s;
-    
 }
 .quick-links ul li{
     margin: 0 30px;
@@ -206,7 +214,7 @@ h3,h6,h2,p{
     font-size: 16px;
 }
 .quick-links ul:hover{
-    height: 55px;
+    height: 60px;
 }
 .social-box{
     position: absolute;
@@ -227,6 +235,8 @@ h3,h6,h2,p{
     text-align: right;
     padding-right: 75px;
     transform: rotate(90deg);
+    color: #ff9301;
+    font-weight: 900;
 }
 .follow-me::after{
     content: '';
@@ -249,12 +259,13 @@ h3,h6,h2,p{
 .social-icon a:hover{
     color: #ff9031;
 }
+/* About me Section */
 #about-me{
     position: relative;
     width: 100%;
     height: 100vh;
     margin-top: 5px;
-    background: url('https://wallpaperaccess.com/full/1962097.jpg') no-repeat center center/cover;
+    background: url('/Portfolio/images/portfoilio\ backgruond2.jpg') no-repeat center center/cover;
     z-index: 2;
 }
 
@@ -310,24 +321,21 @@ h3,h6,h2,p{
 .conclusion{
     font-size: 16px;
 }
-/* Work *****************************            */
 
-/* #work{
-    position:absolute;
-    width: 100%;
-    height: 100vh;
-    display: inline-flex;
-    background: url('background.jpg') no-repeat center center/cover;
+/* work / experience section */
+.workSkill{
+    position: relative;
     margin-top: 5px;
-    z-index: 2000;
-} */
+    display: flex;
+    flex-direction: column;
+    background: url('/Portfolio/images/portfoilio\ backgruond3.jpg') no-repeat center center/cover;
+}
 .heading{
-    position: absolute;
     align-items: center;
     text-align: center;
+    display: flex;
     justify-content: center;
     margin: 20px;
-    left: 40%;
 }
 .heading h2{
     font-size: 30px;
@@ -337,13 +345,15 @@ h3,h6,h2,p{
     align-items: center;
 }
 
-
+.work-container{
+    display: flex;
+    flex-direction: column;
+}
 .maincontainer{
     width: 300px;
     height: 300px;
-    margin: 125px 70px 0px 65px;
+    margin: 40px;
     float: left;
-    
 }
 .image2 img{
     width: 300px;
@@ -370,7 +380,6 @@ h3,h6,h2,p{
 }
 .back h2
 {
-    position: absolute;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -380,7 +389,6 @@ h3,h6,h2,p{
 
 .back p
 {
-    position: absolute;
     top: 50px;
     text-align: center;
     align-items: center;
@@ -423,70 +431,58 @@ h3,h6,h2,p{
     transform: perspective(600px) rotateY(0deg);
 }
 
-#work{
-    position: absolute;
-    margin-top: 5px;
-    background: url('https://www.pixel4k.com/wp-content/uploads/2018/11/dark-black-simple-background-4k_1541970824.jpg') no-repeat center center/cover;
-}
-.locontainer{
-    max-width: 1000px;
-    min-height: 70vh;
-    width: 100%;
+/* Contact section */
+#contact{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-top: 5px;
+    background-color: #000000b2;
     align-items: center;
-    margin-top: 0;
-    overflow: hidden;
-    margin: 0px 80px 80px 60px;
+    justify-content: center;
+    background: url('/Portfolio/images/portfoilio\ backgruond4.jpg') no-repeat center center/cover;
 }
-.box{
-    max-width: 600px;
-    min-height: 250px;
-    position: relative;
-    cursor: pointer;
-    left: 8%;
-}
-.box .thumb{
-    max-width: 250px;
-    width: 100%;
-    height: 247px;
-    border-radius: 50%;
-    position: relative;
-    overflow: hidden;
-    float: left;
-    shape-outside: circle();
-    margin-right: 20px;
-    border: 2px solid whitesmoke;
-}
-.thumb img{
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-}
-.box .text{
-   padding: 20px 20px 20px 20px;
-    background-color: #22222669;
-    height: 210px;
-    width: 600px;
-    border-radius: 200px 200px 200px 200px;
-    transition: all 0.5s ease-out;
-}
-.box .text h2{
-    text-transform: uppercase;
-    letter-spacing: 2px;
-
-}
-.box .text p{
-    margin: 15px 0;
-}
-.box .text:hover{
-    background-color: rgb(14, 71, 90);
+.contact-box{
+    background-color: rgba(21, 20, 20, 0.42);
+    border-radius: 10px;
     color: white;
-    font-weight: 400;
-    font-size: 14px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    box-shadow: 12px 13px 8px -5px rgba(29, 85, 117, 0.585);
-     
+}
+.contact-left{
+    width: 450px;
+    padding: 20px;
+    flex: 1;
+}
+.contact-heading{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1px;
+    color: #fff;
+    text-align: center;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    margin-top:0;
+    padding: 10px;
+}
+input,textarea, .btn {
+    margin: 10px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.btn{
+    background-color: #082d43;
+    color: white;
+    cursor: pointer;
+    border : 2px solid #082d43;
+    transition: all 0.4s;
+}
+.btn:hover {
+    background-color: rgba(21, 20, 20, 0.42);
+    border: 2px solid #fff;
+    color: #fff;
 }
