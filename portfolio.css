@@ -250,11 +250,12 @@ h3,h6,h2,p{
     display: block;
     margin-bottom: 20px;
     text-align: center;
-    color: #bbb;
+    color: #ff9031;
+    transform: scale(1.5);
     transition: all 0.5s;
 }
 .social-icon a:hover{
-    color: #ff9031;
+    color: #fff;
 }
 /* About me Section */
 #about-me{
