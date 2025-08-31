@@ -15,7 +15,7 @@ body{
 .container{
     width: 100%;
     height: 100vh;
-   background:url('/images/portfoilio\ backgruond.jpg');
+   background:url('images/portfoilio\ backgruond.jpg');
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
@@ -262,7 +262,7 @@ h3,h6,h2,p{
     width: 100%;
     height: 100vh;
     margin-top: 5px;
-    background: url('/images/portfoilio\ backgruond2.jpg') no-repeat center center/cover;
+    background: url('images/portfoilio\ backgruond2.jpg') no-repeat center center/cover;
     z-index: 2;
     display: flex;
     flex-direction: row;
@@ -354,7 +354,7 @@ h3,h6,h2,p{
     margin-top: 5px;
     display: flex;
     flex-direction: column;
-    background: url('/images/portfoilio\ backgruond3.jpg') no-repeat center center/cover;
+    background: url('images/portfoilio\ backgruond3.jpg') no-repeat center center/cover;
 }
 .heading{
     align-items: center;
@@ -442,7 +442,7 @@ h3,h6,h2,p{
     margin-top: 5px;
     align-items: center;
     justify-content: center;
-    background: url('/images/portfoilio\ backgruond4.jpg') no-repeat center center/cover;
+    background: url('images/portfoilio\ backgruond4.jpg') no-repeat center center/cover;
 }
 .contact-box{
     background-color: rgba(21, 20, 20, 0.42);
