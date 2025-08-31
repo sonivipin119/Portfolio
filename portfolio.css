@@ -3,6 +3,7 @@ body{
    margin: 0;
    top: 0;
    color: #fff;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .bodyContainer{
     width: 100%;
@@ -14,7 +15,7 @@ body{
 .container{
     width: 100%;
     height: 100vh;
-   background:url('/Portfolio/images/portfoilio\ backgruond.jpg');
+   background:url('/images/portfoilio\ backgruond.jpg');
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
@@ -106,19 +107,14 @@ filter: drop-shadow(5px 5px 70px rgba(229, 223, 223, 0.3));
     top: 25%;
     height: 320px;
     width: 320px;
-
 }
-
-
 .banner{
     padding: 0;
     width: 80%;
     height: 70%;
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 150px;
-   
-    
 }
 h3,h6,h2,p{
     margin: 0px;
@@ -156,11 +152,12 @@ h3,h6,h2,p{
 .app-text p{
     width: 500px;
     font-size: 17px;
-    color: #919191;
+    color: #fff;
+    letter-spacing: 0.5px;
     line-height: 25px;
 }
 .cv-btn{
-    margin-top: 40px;
+    margin-top: 35px;
 }
 .cv-btn a{
    
@@ -265,49 +262,78 @@ h3,h6,h2,p{
     width: 100%;
     height: 100vh;
     margin-top: 5px;
-    background: url('/Portfolio/images/portfoilio\ backgruond2.jpg') no-repeat center center/cover;
+    background: url('/images/portfoilio\ backgruond2.jpg') no-repeat center center/cover;
     z-index: 2;
+    display: flex;
+    flex-direction: row;
+}
+.skills-section h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 30px;
+}
+.skills-box {
+  width: 500px;
+  height: 500px;  
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  background-color: #efefee;
+  border: 4px solid #ff9031;
+  border-radius: 20px;
+  margin: 20px;
 }
 
-.logo img{
-    position: absolute;
-    height: 500px;
-    width: 330px;
-    left: 6%;
-    margin-top: 4%;
-    margin-bottom: 10%;
-    overflow: hidden;
-    box-shadow: 9px 9px 17px -6px skyblue;
-    transform: change ;
-   
-    
+.skills-logo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
 }
 
+.skills-logo img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.skills-logo img:hover {
+  transform: scale(1.1);   /* hover effect */
+}
+.html14, .html4{
+    transform: scale(2);
+}
 .introduction{
     position: absolute;
-    left: 40%;
+    left: 43%;
     width: 50%;
-    
     margin-top: 50px;
 }
 .introduction h2{
     position: absolute;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     letter-spacing: 1px;
-    color: #193e44;
+    color:#ff9031
 }
 .introduction .skills{
     position: absolute;
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 16px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .naam, .we{
-    color: gray;
-    font-weight: 600;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 800;
 }
 .edu h3{
-    color: #193e44;
+    color: #ff9031;
 }
 .school h3, .degree h3{
     font-size: 15px;
@@ -328,7 +354,7 @@ h3,h6,h2,p{
     margin-top: 5px;
     display: flex;
     flex-direction: column;
-    background: url('/Portfolio/images/portfoilio\ backgruond3.jpg') no-repeat center center/cover;
+    background: url('/images/portfoilio\ backgruond3.jpg') no-repeat center center/cover;
 }
 .heading{
     align-items: center;
@@ -344,91 +370,67 @@ h3,h6,h2,p{
     text-align: center;
     align-items: center;
 }
-
+.maincontainer h2{
+    margin-bottom: 10px;
+}
 .work-container{
     display: flex;
     flex-direction: column;
 }
 .maincontainer{
-    width: 300px;
-    height: 300px;
-    margin: 40px;
+    display: flex;
+    flex-direction: row;
+    margin: 5px 40px 40px 40px;
     float: left;
 }
 .image2 img{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-radius: 20px;
     box-shadow: 12px 13px 8px -6px skyblue;
     overflow: hidden;
 }
-.front h2
-{
-    display: grid;
-    position: absolute;
-    top: 250px;
-    background: #022e3da5;
-    height: 50px;
-    width: 300px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    overflow: hidden;
-    color: #fcf6f6;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+.image2 img:hover{
+    transform: scale(1.05);
+    transition: ease-in-out .4s;
 }
-.back h2
-{
-    text-align: center;
-    align-items: center;
+.content{
+    margin-left: 40px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin-top: 5px auto;
-    left: 70px;
+    font-size: 16px;
+    width: 50%;
 }
-
-.back p
-{
-    top: 50px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    font-size: 15px;
-    letter-spacing: 1px;
-    padding: 2px;
+.middle{
+    flex-direction: row-reverse;
 }
-.maincontainer > .front
-{
-    position: absolute;
-    transform: perspective(600px) rotateY(0deg);
+.middle .image2 img{
+    box-shadow: -12px 13px 8px -6px skyblue;
+}
+.middle .content{
+    text-align: right;
+    margin-right: 30px;
+    text-align: left;
+    margin-left: 0px;
+}
+.Numbering{
+    color: #ff9301;
+    font-size: 100px;
+    font-weight: 900;
+    margin-left: 70px;
+    margin-top: 50px;
+}
+.middle .Numbering{
+    margin-right: 80px;
+    margin-left: 0px;
+}
+.Numbering:hover{
+    color: white;
+    cursor: pointer;
+    transition: all 0.4s;
     
-    width: 302px;
-    height: 300px;
-    
-    backface-visibility: hidden; 
-    transition: transform .6s linear 0s;
-}
-.maincontainer > .back
-{
-    position: absolute;
-    transform: perspective(600px) rotateY(180deg);
-    background: #26262656;
-    color: #fff;
-    width: 302px;
-    height: 300px;
-    border-radius: 10px;
-    padding-top: 8px;
-    backface-visibility: hidden; 
-    transition: transform .6s linear 0s;
-}
-.maincontainer:hover > .front
-{
-    transform: perspective(600px) rotateY(-180deg);
-}
-
-.maincontainer:hover > .back
-{
-    transform: perspective(600px) rotateY(0deg);
 }
 
 /* Contact section */
@@ -438,10 +440,9 @@ h3,h6,h2,p{
     width: 100%;
     height: 100vh;
     margin-top: 5px;
-    background-color: #000000b2;
     align-items: center;
     justify-content: center;
-    background: url('/Portfolio/images/portfoilio\ backgruond4.jpg') no-repeat center center/cover;
+    background: url('/images/portfoilio\ backgruond4.jpg') no-repeat center center/cover;
 }
 .contact-box{
     background-color: rgba(21, 20, 20, 0.42);
