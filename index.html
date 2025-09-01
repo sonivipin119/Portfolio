@@ -13,7 +13,7 @@
 
   <body>
     <div class="bodyContainer">
-      <section class="container bg-image">
+      <section id="home" class="container bg-image">
         <div class="head">
           <nav id="navbar">
             <nav class="name">
@@ -37,7 +37,7 @@
         <div class="img-logo">
           <div class="image">
             <img
-              src="images" alt="" />
+              src="images/my pic final.png" alt="" />
           </div>
         </div>
         <div class="banner">
@@ -150,14 +150,14 @@
 
       </section>
       <!-- Project Section -->
-      <section id="work " class="workSkill">
+      <section id="work" class="workSkill">
         <div class="heading">
           <h2>Projects</h2>
         </div>
         <div class="work-container">
           <div class="maincontainer">
             <div class="front">
-              <div class="image2">
+              <div class="image2 prescription">
                 <img src="images/medical RX2.webp" alt="" />
               </div>
             </div>
@@ -173,6 +173,10 @@
                 prescriptions could not be altered or forged, providing
                 transparency and trust between stakeholders.
               </p>
+              <div class="live">
+                <a href="https://github.com/sonivipin119" target="_blank"><button class="livebtn">Live Demo</button></a>
+                <a href="https://github.com/sonivipin119" target="_blank"><button class="livebtn">View Code</button></a>
+              </div>
             </div>
             <div class="Numbering">01</div>
           </div>
@@ -183,7 +187,7 @@
               </div>
             </div>
             <div class="content">
-              <h2>HomieeBook</h2>
+              <h2>HomieeBook</h2> 
               <p>
                 Developed a full-stack home booking platform using Node.js,
                 Express.js, and MongoDB, enabling users to browse, book, and
@@ -194,6 +198,10 @@
                 security, and reliability, making the system suitable for
                 real-world deployment in the property rental domain.
               </p>
+              <div class="live">
+                <a href="https://github.com/sonivipin119" target="_blank"><button class="livebtn">Live Demo</button></a>
+                <a href="https://github.com/sonivipin119/HomieeBook" target="_blank"><button class="livebtn">View Code</button></a>
+              </div>
             </div>
             <div class="Numbering">02</div>
           </div>
@@ -214,6 +222,10 @@
                 clean UI, fast performance, and practical security best
                 practices.
               </p>
+              <div class="live">
+                <a href="https://password-strength-checkervip.netlify.app/" target="_blank"><button class="livebtn">Live Demo</button></a>
+                <a href="https://github.com/sonivipin119/My-projects/tree/main/password" target="_blank"><button class="livebtn">View Code</button></a>
+              </div>
             </div>
             <div class="Numbering">03</div>
           </div>
@@ -223,29 +235,34 @@
         <div class="contact-box">
           <div class="contact-left">
             <h2 class="contact-heading">Contact Me</h2>
-            <form action="#" class="contact-form">
+            <form action="#" id="contact-form" class="contact-form">
               <input
-                type="text"
+                type="text" name="name"
                 class="field"
                 placeholder="Your Name"
                 required
               />
               <input
-                type="email"
+                type="email" name="email"
                 class="field"
                 placeholder="Your Email"
                 required
               />
               <input
-                type="text"
+                type="text" name="title"
                 class="field"
                 placeholder="Your Subject"
                 required
               />
-              <textarea placeholder="Message" class="field" rows="5"></textarea>
-              <button class="btn">Send</button>
+              <textarea placeholder="Message" name="message" class="field" rows="5"></textarea>
+              <input  class="btn" type="submit" value="Send">
             </form>
           </div>
+          <section id="afterContact" class="afterContact hidden">
+            <div class="boxContact">
+              <h2>Thankyou!</br> I will contact you soon.</h2>
+            </div>
+          </section>
         </div>
       </section>
     </div>
@@ -290,6 +307,39 @@
       }
 
       typeEffect();
+    </script>
+    <!-- sending email -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "9dOmKc2D8Y54fky7K",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // these IDs from the previous steps
+                // emailjs.sendForm('service_7rrhsbq', 'template_yfm5g0b', this)
+                //     .then(() => {
+                //         console.log('SUCCESS!');
+                //         window.location.reload();
+                //     }, (error) => {
+                //         console.log('FAILED...', error);
+                //     });
+                document.querySelector('.contact-left').classList.add('hidden');
+                document.querySelector('.afterContact').classList.remove('hidden');
+                setTimeout(() => {
+                      window.location.reload();
+                  }, 3000);
+            });
+        }
     </script>
   </body>
 </html>
