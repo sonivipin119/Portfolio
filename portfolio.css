@@ -374,6 +374,10 @@ h3,h6,h2,p{
     text-align: center;
     align-items: center;
 }
+.headh2{
+    color: #ff9031;
+    font-size: 20px;
+}
 .maincontainer h2{
     margin-bottom: 10px;
 }
